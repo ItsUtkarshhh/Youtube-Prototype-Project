@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+VA+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#"><img src="Assets/HamburgerMenu.png" alt="Menu" id="ham-menu"></a>
+                <a href="#"><img src="Assets/YoutubeLogo.png" alt="YouTube" id="yt-logo"></a>
+            </div>
+            <div class="nav-center">
+                <form role="search">
+                    <input type="text" name="search" placeholder="Search" aria-label="Search">
+                    <button type="submit"><img src="Assets/SearchIcon.png" alt="Search" id="search-btn"></button>
+                </form>
+                <button type="button" aria-label="Voice Search"><img src="Assets/MicIcon.png" alt="Mic" id="vc-search"></button>
+            </div>
+            <div class="nav-right">
+                <button type="button" id="create-btn">
+                    <img src="Assets/PlusIcon.png" alt="create">
+                    <span>Create</span>
+                </button>
+                <button type="button"><img src="Assets/NotificationIcon.png" alt="Notifications" id="notify-btn"></button>
+                <button type="button"><img src="Assets/UserProfile.jpg" alt="User Account" id="user-acnt"></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-s1">
+                <a href="#"><img src="Assets/Home.png" alt=""><span>Home</span></a>
+                <a href="#"><img src="Assets/YoutubeShorts.png" alt=""><span>Shorts</span></a>
+                <a href="#"><img src="Assets/YoutubeSubs.png" alt=""><span>Subscriptions</span></a>
+            </div>
+
+            <div class="sidebar-s2">
+                <span>You <img src="Assets/Rightarr.png" alt=""></span>
+                <a href="#"><img src="Assets/HistoryIcon.png" alt=""><span>History</span></a>
+                <a href="#"><img src="Assets/PlaylistsIcon.png" alt=""><span>Playlists</span></a>
+                <a href="#"><img src="Assets/YourVdos.png" alt=""><span>Your Videos</span></a>
+                <a href="#"><img src="Assets/CoursesIcon.png" alt=""><span>Your Courses</span></a>
+                <a href="#"><img src="Assets/LikedVdos.png" alt=""><span>Liked Videos</span></a>
+                <a href="#"><img src="Assets/ClipsIcon.png" alt=""><span>Your Clips</span></a>
+            </div>
+
+            <div class="sidebar-s3">
+                <span>Subscriptions</span>
+                <a href="#"><img src="Assets/abhijitchawda.jpg" alt=""><span>Abhijit Chawda</span></a>
+                <a href="#"><img src="Assets/5mk.jpg" alt=""><span>5 Minutes Craft</span></a>
+                <a href="#"><img src="Assets/wwe.jpg" alt=""><span>WWE</span></a>
+                <a href="#"><img src="Assets/akashgupta.jpg" alt=""><span>Akash Gupta</span></a>
+                <span id="showmore">
+                    <img src="Assets/Downwardarr.png" alt=""><span>Show More</span>
+                </span>
+            </div>
+        
+            <div class="sidebar-s4">
+                <span>Explore</span>
+                <a href="#"><img src="Assets/trending.png" alt=""><span>Trending</span></a>
+                <a href="#"><img src="Assets/shopping.png" alt=""><span>Shopping</span></a>
+                <a href="#"><img src="Assets/music.png" alt=""><span>Music</span></a>
+                <a href="#"><img src="Assets/movies.png" alt=""><span>Movies</span></a>
+                <a href="#"><img src="Assets/live.png" alt=""><span>Live</span></a>
+                <a href="#"><img src="Assets/gaming.png" alt=""><span>Gaming</span></a>
+                <a href="#"><img src="Assets/news.png" alt=""><span>News</span></a>
+                <a href="#"><img src="Assets/sports.png" alt=""><span>Sports</span></a>
+                <a href="#"><img src="Assets/CoursesIcon.png" alt=""><span>Courses</span></a>
+                <a href="#"><img src="Assets/fashion.png" alt=""><span>Fashion & Beauty</span></a>
+                <a href="#"><img src="Assets/podcasts.png" alt=""><span>Podcasts</span></a>
+            </div>
+
+            <div class="sidebar-s5">
+                <span>Explore more on Youtube</span>
+                <a href="#"><img src="Assets/youtube.png" alt=""><span>Youtube Premium</span></a>
+                <a href="#"><img src="Assets/youtubemusic.png" alt=""><span>Youtube Music</span></a>
+                <a href="#"><img src="Assets/youtubestudio.webp" alt=""><span>Youtube Studio</span></a>
+                <a href="#"><img src="Assets/youtubekids.png" alt=""><span>Youtube Kids</span></a>
+            </div>
+
+            <div class="sidebar-s6">
+                <a href="#"><img src="Assets/settings.png" alt=""><span>Settings</span></a>
+                <a href="#"><img src="Assets/HistoryIcon.png" alt=""><span>Report History</span></a>
+                <a href="#"><img src="Assets/help.png" alt=""><span>Help</span></a>
+                <a href="#"><img src="Assets/feedback.png" alt=""><span>Send Feedback</span></a>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="sf-1">
+                    <a href="$">About</a>
+                    <a href="$">Press</a>
+                    <a href="$">Copyright</a>
+                    <a href="$">Contact Us</a>
+                    <a href="$">Creators</a>
+                    <a href="$">Advertise</a>
+                    <a href="$">Developers</a>
+                </div>
+                <div class="sf-2">
+                    <a href="$">Terms</a>
+                    <a href="$">Privacy</a>
+                    <a href="$">Policy & Safety</a>
+                    <a href="$">How Youtube works</a>
+                    <a href="$">Test new features</a>
+                </div>
+                <div class="sf-3">
+                    <span>&copy; 2025 Google LLC</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-area">
+            <section class="most-searched">
+                <a href="#">All</a>
+                <a href="#">Music</a>
+                <a href="#">Source Code</a>
+                <a href="#">Web Devlopment</a>
+                <a href="#">Podcasts</a>
+                <a href="#">Machine Learning</a>
+                <a href="#">WWE Championships</a>
+                <a href="#">News</a>
+                <a href="#">Skills</a>
+                <a href="#">Study skills</a>
+                <a href="#">Mixes</a>
+                <a href="#">Playlists</a>
+                <a href="#">Mantras</a>
+                <a href="#">Union Public Services</a>
+                <a href="#">Live</a>
+                <a href="#">Strategies</a>
+                <a href="#">Ambient Music</a>
+                <a href="#">History</a>
+                <a href="#">Recently Uploaded</a>
+                <a href="#">Watched</a>
+                <a href="#">New to you</a>
+            </section>
+
+            <section class="main-content">
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/ChaiCode-Yt2.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/ChaiCode.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>Build a Fullstack Project with NextJS, NextAuth, Imagekit and Mongodb</h3>
+                            <div>Chai aur Code &#10003;</div>
+                            <div>63K Views &#x2022; 4 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/AnkurWairkoo-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/warikoo.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>14 ways to MANAGE your TIME BETTER in 2024! GIVEAWAY ALERT! | Ankur Warikoo</h3>
+                            <div>warikoo &#10003;</div>
+                            <div>233K Views &#x2022; 1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/DebtBomb-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/thinkschool.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>America is on <img src="Assets/redalert.png" alt="" style="height: 16px;"> RED ALERT for its DEPT BOMB of $36 TRILLION? Geo Politics</h3>
+                            <div>Think School &#10003;</div>
+                            <div>982K Views &#x2022; 3 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/Fin-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/nischa.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>Master Financial Literacy in 54 Minutes: Everything They Never Taught You About</h3>
+                            <div>Nischa</div>
+                            <div>778K Views &#x2022; 1 month ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/GSOC-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/nishantchahar.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>How to crack Google Summer of Code 2026 | Free Roadmap & GSOC Proposal Inside</h3>
+                            <div>Nishant Chahar &#10003;</div>
+                            <div>94K Views &#x2022; 4 months ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/ChaiCode-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/ChaiCode.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>Why to learn DSA | chai aur DSA</h3>
+                            <div>Chai aur Code &#10003;</div>
+                            <div>78K Views &#x2022; 1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/DesignCode-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/sajid.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>The Easiest Way to Build Websites</h3>
+                            <div>Sajid &#10003;</div>
+                            <div>955K Views &#x2022; 1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/Vscode-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/devression.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>12 VS Code Extensions to INCREASE Productivity 2024</h3>
+                            <div>Devression &#10003;</div>
+                            <div>965K Views &#x2022; 1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/Js-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/catherineli.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>How to Learn Javascript FAST in 2025</h3>
+                            <div>Catherine Li &#10003;</div>
+                            <div>75K Views &#x2022; 2 months ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/LearnFast-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/drishtisharma.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>Meta Learning Method to Learn Anything 10x Fast | Drishti Sharma</h3>
+                            <div>Drishti Sharma &#10003;</div>
+                            <div>800K Views &#x2022; 4 months ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/SharddhaKhapra-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/apnacollege.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>What are the best Projects for Placements & Internships that will get your Hired?</h3>
+                            <div>Apna College &#10003;</div>
+                            <div>286K Views &#x2022; 13 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/striver-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/tuf.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>L1: Introduction to Bit Manipulation | 1's 2's Complement | Bit Operators</h3>
+                            <div>take U forward &#10003;</div>
+                            <div>362K Views &#x2022; 1 year ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/Sapphire-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/edsheeran.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>Ed Sheeran - Sapphire (Official Music Video)</h3>
+                            <div>Ed Sheeran &#10003;</div>
+                            <div>43M Views &#x2022; 11 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vdo-component">
+                    <a href="#"><img src="Assets/AiProjects-Yt1.png" alt=""></a>
+                    <div class="vdo-description">
+                        <div class="channel">
+                            <a href="#"><img src="Assets/harshittrehan.jpg" alt=""></a>
+                        </div>
+                        <div class="vdo-info">
+                            <h3>Top 5 AI Projects to Land your Dream Job in 2025</h3>
+                            <div>Harshit Trehan</div>
+                            <div>33K Views &#x2022; 6 months ago</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

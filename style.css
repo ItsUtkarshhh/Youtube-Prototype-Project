@@ -1,0 +1,324 @@
+/* base setup */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* global styling */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* styling the navbar! */
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    flex: 1;
+    gap: 16px;
+}
+
+.nav-center {
+    flex: 2;
+    justify-content: center;
+    gap: 16px;
+}
+
+.nav-right {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+/* styling the navbar inner elements! */
+#ham-menu {
+    height: 24px;
+    width: auto;
+}
+
+#yt-logo {
+    height: 32px;
+    padding: 4px;
+    width: auto;
+}
+
+.nav-center form {
+    display: flex;
+}
+
+.nav-center form input {
+    width: 540px;
+    height: 40px;
+    background-color: white;
+    border: 0.5px solid #DFDFDF;
+    color: black;
+    font-weight: 500;
+    padding-left: 14px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#search-btn {
+    height: 40px;
+    padding: 4px 14px;
+    background-color: #F0F0F0;
+    border-radius: 0px 16px 16px 0px;
+    border: 0.5px solid #DFDFDF;
+}
+
+#vc-search {
+    height: 40px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#create-btn {
+    height: 38px;
+    width: auto;
+    padding: 0px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #F2F2F2;
+    border-radius: 19px;
+    border: 0.5px solid #DFDFDF;
+}
+
+#create-btn img {
+    height: 20px;
+}
+
+#create-btn span {
+    color: black;
+    font-weight: bold;
+}
+
+#notify-btn {
+    height: 40px;
+    width: auto;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+#user-acnt {
+    height: 40px;
+    width: auto;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+/* youtube sidebar! */
+.layout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 100%;
+    padding-left: 16px;
+    gap: 20px;
+    flex-shrink: 0;
+    /* position: fixed; */
+}
+
+.sidebar-s1, .sidebar-s2, .sidebar-s3, .sidebar-s4, .sidebar-s5, .sidebar-s6 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sidebar-s1 a, .sidebar-s2 a, .sidebar-s3 a, .sidebar-s4 a, .sidebar-s5 a, .sidebar-s6 a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+    padding: 8px;
+    border-radius: 8px;
+    /* border: 1px solid black; */
+}
+
+.sidebar-s2 > span, .sidebar-s3 #showmore {
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar-s2 > span img, .sidebar-s3 #showmore > img {
+    height: 12px;
+    width: auto;
+}
+
+.sidebar-s3 #showmore span {
+    font-weight: normal;
+}
+
+.sidebar-s1 a:hover, .sidebar-s2 a:hover, .sidebar-s3 a:hover, .sidebar-s4 a:hover, .sidebar-s5 a:hover, .sidebar-s6 a:hover, .sidebar-s2 > span:hover, .sidebar-s3 > #showmore:hover {
+    background-color: #E5E5E5;
+}
+
+.sidebar-s1 a img, .sidebar-s2 a img, .sidebar-s3 a img, .sidebar-s4 a img, .sidebar-s5 a img, .sidebar-s6 a img {
+    height: 24px;
+    width: auto;
+    padding: 2px;
+}
+
+.sidebar-s3 a {
+    object-fit: contain;
+}
+
+.sidebar-s3 a img {
+    border-radius: 12px;
+}
+
+.sidebar-s1 > span, .sidebar-s2 > span, .sidebar-s3 > span, .sidebar-s4 > span, .sidebar-s5 > span {
+    font-weight: 600;
+    padding: 8px;
+}
+
+/* sidebar footer section */
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sf-1, .sf-2, .sf-3 {
+    padding: 12px 12px 0px;
+}
+
+.sf-1 a, .sf-2 a, .sf-3 a {
+    color: gray;
+    padding-right: 2px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sf-3 span {
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.main-area {
+    width: 100%;
+    overflow-x: hidden; /* Prevent page-wide scroll */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.most-searched {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 16px;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.most-searched::-webkit-scrollbar {
+  display: none;
+}
+
+.most-searched {
+  scrollbar-width: none; /* Firefox */
+}
+
+.most-searched a {
+    flex-shrink: 0;
+    background-color: #e5e5e5;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;;
+    white-space: nowrap;
+}
+
+.main-content {
+    height: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vdo-component {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.vdo-component > a > img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.vdo-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.vdo-description > div > a > img {
+    width: 36px;
+    border-radius: 50%;
+}
+
+.vdo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 10px;
+}
+
+.vdo-info h3 {
+    font-size: 16px;
+}
