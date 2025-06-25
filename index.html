@@ -19,17 +19,17 @@
             <div class="nav-center">
                 <form role="search">
                     <input type="text" name="search" placeholder="Search" aria-label="Search">
-                    <button type="submit"><img src="Assets/SearchIcon.png" alt="Search" id="search-btn"></button>
+                    <button type="submit" id="search-btn"><img src="Assets/SearchIcon.png" alt="Search"></button>
                 </form>
-                <button type="button" aria-label="Voice Search"><img src="Assets/MicIcon.png" alt="Mic" id="vc-search"></button>
+                <button type="button" aria-label="Voice Search" id="vc-search-btn"><img src="Assets/MicIcon.png" alt="Mic" id="vc-search"></button>
             </div>
             <div class="nav-right">
                 <button type="button" id="create-btn">
                     <img src="Assets/PlusIcon.png" alt="create">
                     <span>Create</span>
                 </button>
-                <button type="button"><img src="Assets/NotificationIcon.png" alt="Notifications" id="notify-btn"></button>
-                <button type="button"><img src="Assets/UserProfile.jpg" alt="User Account" id="user-acnt"></button>
+                <button type="button" id="notify-btn"><img src="Assets/NotificationIcon.png" alt="Notifications"></button>
+                <button type="button" id="user-acnt"><img src="Assets/UserProfile.jpg" alt="User Account"></button>
             </div>
         </nav>
     </header>
@@ -43,7 +43,7 @@
             </div>
 
             <div class="sidebar-s2">
-                <span>You <img src="Assets/Rightarr.png" alt=""></span>
+                <a href="#" id="you"><span>You</span><img src="Assets/Rightarr.png" alt=""></a>
                 <a href="#"><img src="Assets/HistoryIcon.png" alt=""><span>History</span></a>
                 <a href="#"><img src="Assets/PlaylistsIcon.png" alt=""><span>Playlists</span></a>
                 <a href="#"><img src="Assets/YourVdos.png" alt=""><span>Your Videos</span></a>
@@ -53,18 +53,16 @@
             </div>
 
             <div class="sidebar-s3">
-                <span>Subscriptions</span>
+                <span id="heading-s3">Subscriptions</span>
                 <a href="#"><img src="Assets/abhijitchawda.jpg" alt=""><span>Abhijit Chawda</span></a>
                 <a href="#"><img src="Assets/5mk.jpg" alt=""><span>5 Minutes Craft</span></a>
                 <a href="#"><img src="Assets/wwe.jpg" alt=""><span>WWE</span></a>
                 <a href="#"><img src="Assets/akashgupta.jpg" alt=""><span>Akash Gupta</span></a>
-                <span id="showmore">
-                    <img src="Assets/Downwardarr.png" alt=""><span>Show More</span>
-                </span>
+                <a href="#"><img src="Assets/Downwardarr.png" alt=""><span>Show More</span></a>
             </div>
-        
+
             <div class="sidebar-s4">
-                <span>Explore</span>
+                <span id="heading-s4">Explore</span>
                 <a href="#"><img src="Assets/trending.png" alt=""><span>Trending</span></a>
                 <a href="#"><img src="Assets/shopping.png" alt=""><span>Shopping</span></a>
                 <a href="#"><img src="Assets/music.png" alt=""><span>Music</span></a>
@@ -79,7 +77,7 @@
             </div>
 
             <div class="sidebar-s5">
-                <span>Explore more on Youtube</span>
+                <span id="heading-s5">More on Youtube</span>
                 <a href="#"><img src="Assets/youtube.png" alt=""><span>Youtube Premium</span></a>
                 <a href="#"><img src="Assets/youtubemusic.png" alt=""><span>Youtube Music</span></a>
                 <a href="#"><img src="Assets/youtubestudio.webp" alt=""><span>Youtube Studio</span></a>
@@ -121,7 +119,7 @@
                 <a href="#">All</a>
                 <a href="#">Music</a>
                 <a href="#">Source Code</a>
-                <a href="#">Web Devlopment</a>
+                <a href="#">Web Development</a>
                 <a href="#">Podcasts</a>
                 <a href="#">Machine Learning</a>
                 <a href="#">WWE Championships</a>
@@ -148,10 +146,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/ChaiCode.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>Build a Fullstack Project with NextJS, NextAuth, Imagekit and Mongodb</h3>
-                            <div>Chai aur Code &#10003;</div>
-                            <div>63K Views &#x2022; 4 days ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>Build a Fullstack Project with NextJS, NextAuth, Imagekit and Mongodb</h3>
+                                <div><span>Chai aur Code &#10003;</span></div>
+                                <div><span>63K Views &#x2022; 4 days ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -162,10 +163,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/warikoo.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>14 ways to MANAGE your TIME BETTER in 2024! GIVEAWAY ALERT! | Ankur Warikoo</h3>
-                            <div>warikoo &#10003;</div>
-                            <div>233K Views &#x2022; 1 year ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>14 ways to MANAGE your TIME BETTER in 2024! GIVEAWAY ALERT! | Ankur Warikoo</h3>
+                                <div><span>warikoo &#10003;</span></div>
+                                <div><span>233K Views &#x2022; 1 year ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -176,10 +180,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/thinkschool.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>America is on <img src="Assets/redalert.png" alt="" style="height: 16px;"> RED ALERT for its DEPT BOMB of $36 TRILLION? Geo Politics</h3>
-                            <div>Think School &#10003;</div>
-                            <div>982K Views &#x2022; 3 weeks ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>America is on <img src="Assets/redalert.png" alt="" style="height: 16px;"> RED ALERT for its DEPT BOMB of $36 TRILLION? Geo Politics</h3>
+                                <div><span>Think School &#10003;</span></div>
+                                <div><span>982K Views &#x2022; 3 weeks ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -190,10 +197,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/nischa.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>Master Financial Literacy in 54 Minutes: Everything They Never Taught You About</h3>
-                            <div>Nischa</div>
-                            <div>778K Views &#x2022; 1 month ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>Master Financial Literacy in 54 Minutes: Everything They Never Taught You About</h3>
+                                <div><span>Nischa</span></div>
+                                <div><span>778K Views &#x2022; 1 month ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -204,10 +214,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/nishantchahar.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>How to crack Google Summer of Code 2026 | Free Roadmap & GSOC Proposal Inside</h3>
-                            <div>Nishant Chahar &#10003;</div>
-                            <div>94K Views &#x2022; 4 months ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>How to crack Google Summer of Code 2026 | Free Roadmap & GSOC Proposal Inside</h3>
+                                <div><span>Nishant Chahar &#10003;</span></div>
+                                <div><span>94K Views &#x2022; 4 months ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -218,10 +231,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/ChaiCode.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>Why to learn DSA | chai aur DSA</h3>
-                            <div>Chai aur Code &#10003;</div>
-                            <div>78K Views &#x2022; 1 year ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>Why to learn DSA | chai aur DSA</h3>
+                                <div><span>Chai aur Code &#10003;</span></div>
+                                <div><span>78K Views &#x2022; 1 year ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -232,10 +248,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/sajid.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>The Easiest Way to Build Websites</h3>
-                            <div>Sajid &#10003;</div>
-                            <div>955K Views &#x2022; 1 year ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>The Easiest Way to Build Websites</h3>
+                                <div><span>Sajid &#10003;</span></div>
+                                <div><span>955K Views &#x2022; 1 year ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -246,10 +265,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/devression.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>12 VS Code Extensions to INCREASE Productivity 2024</h3>
-                            <div>Devression &#10003;</div>
-                            <div>965K Views &#x2022; 1 year ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>12 VS Code Extensions to INCREASE Productivity 2024</h3>
+                                <div><span>Devression &#10003;</span></div>
+                                <div><span>965K Views &#x2022; 1 year ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -260,10 +282,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/catherineli.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>How to Learn Javascript FAST in 2025</h3>
-                            <div>Catherine Li &#10003;</div>
-                            <div>75K Views &#x2022; 2 months ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>How to Learn Javascript FAST in 2025</h3>
+                                <div><span>Catherine Li &#10003;</span></div>
+                                <div><span>75K Views &#x2022; 2 months ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -274,10 +299,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/drishtisharma.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>Meta Learning Method to Learn Anything 10x Fast | Drishti Sharma</h3>
-                            <div>Drishti Sharma &#10003;</div>
-                            <div>800K Views &#x2022; 4 months ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>Meta Learning Method to Learn Anything 10x Fast | Drishti Sharma</h3>
+                                <div><span>Drishti Sharma &#10003;</span></div>
+                                <div><span>800K Views &#x2022; 4 months ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -288,10 +316,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/apnacollege.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>What are the best Projects for Placements & Internships that will get your Hired?</h3>
-                            <div>Apna College &#10003;</div>
-                            <div>286K Views &#x2022; 13 days ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>What are the best Projects for Placements & Internships that will get your Hired?</h3>
+                                <div><span>Apna College &#10003;</span></div>
+                                <div><span>286K Views &#x2022; 13 days ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -302,10 +333,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/tuf.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>L1: Introduction to Bit Manipulation | 1's 2's Complement | Bit Operators</h3>
-                            <div>take U forward &#10003;</div>
-                            <div>362K Views &#x2022; 1 year ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>L1: Introduction to Bit Manipulation | 1's 2's Complement | Bit Operators</h3>
+                                <div><span>take U forward &#10003;</span></div>
+                                <div><span>362K Views &#x2022; 1 year ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -316,10 +350,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/edsheeran.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>Ed Sheeran - Sapphire (Official Music Video)</h3>
-                            <div>Ed Sheeran &#10003;</div>
-                            <div>43M Views &#x2022; 11 days ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>Ed Sheeran - Sapphire (Official Music Video)</h3>
+                                <div><span>Ed Sheeran &#10003;</span></div>
+                                <div><span>43M Views &#x2022; 11 days ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
@@ -330,10 +367,13 @@
                         <div class="channel">
                             <a href="#"><img src="Assets/harshittrehan.jpg" alt=""></a>
                         </div>
-                        <div class="vdo-info">
-                            <h3>Top 5 AI Projects to Land your Dream Job in 2025</h3>
-                            <div>Harshit Trehan</div>
-                            <div>33K Views &#x2022; 6 months ago</div>
+                        <div class="vdo-details">
+                            <div class="vdo-info">
+                                <h3>Top 5 AI Projects to Land your Dream Job in 2025</h3>
+                                <div><span>Harshit Trehan</span></div>
+                                <div><span>33K Views &#x2022; 6 months ago</span></div>
+                            </div>
+                            <div><span><b>&#58;</b></span></div>
                         </div>
                     </div>
                 </div>
